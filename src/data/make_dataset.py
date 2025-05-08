@@ -68,7 +68,8 @@ def process_data(input_filepath_users, input_filepath_caract, input_filepath_pla
     df_caract["long"] = df_caract["long"].str.replace(',', '.')
     df_caract = df_caract.astype(dico_to_float)
 
-# ATTENTION LIGNE EN PLUS JUSTE POUR LE TEST----2
+# ATTENTION LIGNE EN PLUS JUSTE POUR LE TEST----4
+
     #--Grouping modalities 
     dico = {1:0, 2:1, 3:1, 4:1, 5:1, 6:1,7:1, 8:0, 9:0}
     df_caract["atm"] = df_caract["atm"].replace(dico)
